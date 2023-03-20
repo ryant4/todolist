@@ -9,26 +9,72 @@
 </head>
 <body>
     <div id="page-container">
+        <div id="page-header">
+            <h1>ToDo Application</h1>
+        </div>
         <div id="side-bar">
-            <h1>Let's complete some tasks!</h1>
-            <h2>Home</h2>
+            <!-- THESE SHOULD BE LI/ULs -->
+            <h2>View All Tasks</h2>
+            <h4>+ New Task</h4>
             <div class="projects-sidebar-list">
                 <h2>Projects</h2>
-                <h3>Project One</h3>
-                <h3>Project Two</h3>
-                <h3>Project Three</h3>
+                <h3>Annual Report</h3>
+                <h3>Q4 Presentation</h3>
+                <h3>Family Vacation</h3>
+                <h4>+ New Project</h4>
             </div>
         </div>
         <div id="main-page">
-            <div class="to-do-card">
+            <div class="date-display">March 19th, 2023</div>
+            <div class="to-do-card completed">
                 <div class="to-do-main-display">
                     <div class="main-display-left">
-                        <div class="to-do-status">[ ]</div>
+                        <div class="to-do-status"><img src="./images/checkbox-filled.svg" alt="unfilled checkbox"></div>
                         <div class="to-do-title">Sample Task</div>
                     </div>
                     <div class="main-display-right">
-                        <div class="to-do-edit-button">[Edit]</div>
-                        <div class="to-do-delete-button">[Del]</div>
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="to-do-expanded-details">
+                    <div class="to-do-description">These are the details of the to-do</div>
+                    <div class="to-do-due-date">Due Date: 12/2/2007</div>
+                    <div class="to-do-priority">Priority: High</div>
+                    <div class="to-do-project-parent">Project: Coding</div>
+                </div>
+            </div>
+
+            <div class="to-do-card high-urgency">
+                <div class="to-do-main-display">
+                    <div class="main-display-left">
+                        <div class="to-do-status"><img src="./images/checkbox-unfilled.svg" alt="unfilled checkbox"></div>
+                        <div class="to-do-title">Sample Task</div>
+                    </div>
+                    <div class="main-display-right">
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="to-do-expanded-details">
+                    <div class="to-do-description">These are the details of the to-do</div>
+                    <div class="to-do-due-date">Due Date: 12/2/2007</div>
+                    <div class="to-do-priority">Priority: High</div>
+                    <div class="to-do-project-parent">Project: Coding</div>
+                </div>
+            </div>
+            <div class="to-do-card completed medium-urgency">
+                <div class="to-do-main-display">
+                    <div class="main-display-left">
+                        <div class="to-do-status"><img src="./images/checkbox-filled.svg" alt="unfilled checkbox"></div>
+                        <div class="to-do-title">Sample Task</div>
+                    </div>
+                    <div class="main-display-right">
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="to-do-expanded-details">
@@ -42,31 +88,33 @@
             <div class="to-do-card">
                 <div class="to-do-main-display">
                     <div class="main-display-left">
-                        <div class="to-do-status">[ ]</div>
+                        <div class="to-do-status"><img src="./images/checkbox-unfilled.svg" alt="unfilled checkbox"></div>
                         <div class="to-do-title">Sample Task</div>
                     </div>
                     <div class="main-display-right">
-                        <div class="to-do-edit-button">[Edit]</div>
-                        <div class="to-do-delete-button">[Del]</div>
+                        <div class="to-do-expand"><img src="./images/expand-less.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
                     </div>
                 </div>
-                <div class="to-do-expanded-details">
-                    <div class="to-do-description">These are the details of the to-do</div>
-                    <div class="to-do-due-date">Due Date: 12/2/2007</div>
-                    <div class="to-do-priority">Priority: High</div>
-                    <div class="to-do-project-parent">Project: Coding</div>
+                <div class="to-do-expanded-details expanded">
+                    <div class="to-do-description">These are the details of the to-do. There's a lot of information that could go here but I don't really care. I just need to see what it looks like it someone writes a lot.</div>
+                    <div class="to-do-due-date">Due Date: 3/19/23</div>
+                    <div class="to-do-priority">Priority: Low</div>
+                    <div class="to-do-project-parent">Project: Annual Report</div>
                 </div>
             </div>
-
-            <div class="to-do-card">
+            <div class="date-display">March 20th, 2023</div>
+            <div class="to-do-card high-urgency completed">
                 <div class="to-do-main-display">
                     <div class="main-display-left">
-                        <div class="to-do-status">[ ]</div>
+                        <div class="to-do-status"><img src="./images/checkbox-filled.svg" alt="unfilled checkbox"></div>
                         <div class="to-do-title">Sample Task</div>
                     </div>
                     <div class="main-display-right">
-                        <div class="to-do-edit-button">[Edit]</div>
-                        <div class="to-do-delete-button">[Del]</div>
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="to-do-expanded-details">
@@ -76,16 +124,17 @@
                     <div class="to-do-project-parent">Project: Coding</div>
                 </div>
             </div>
-
-            <div class="to-do-card">
+   
+            <div class="to-do-card completed">
                 <div class="to-do-main-display">
                     <div class="main-display-left">
-                        <div class="to-do-status">[ ]</div>
+                        <div class="to-do-status"><img src="./images/checkbox-filled.svg" alt="unfilled checkbox"></div>
                         <div class="to-do-title">Sample Task</div>
                     </div>
                     <div class="main-display-right">
-                        <div class="to-do-edit-button">[Edit]</div>
-                        <div class="to-do-delete-button">[Del]</div>
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="to-do-expanded-details">
@@ -95,17 +144,16 @@
                     <div class="to-do-project-parent">Project: Coding</div>
                 </div>
             </div>
-
-            <div class="to-do-card">
+            <div class="to-do-card medium-urgency">
                 <div class="to-do-main-display">
                     <div class="main-display-left">
-                        <div class="to-do-status">[ ]</div>
+                        <div class="to-do-status"><img src="./images/checkbox-unfilled.svg" alt="unfilled checkbox"></div>
                         <div class="to-do-title">Sample Task</div>
                     </div>
                     <div class="main-display-right">
-                        <div class="to-do-expand-button">[Expand]</div>
-                        <div class="to-do-edit-button">[Edit]</div>
-                        <div class="to-do-delete-button">[Del]</div>
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="to-do-expanded-details">
@@ -115,6 +163,7 @@
                     <div class="to-do-project-parent">Project: Coding</div>
                 </div>
             </div>
+ 
 
         </div>
     </div>
