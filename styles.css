@@ -164,11 +164,11 @@ h4 {
 }
 
 .high-urgency {
-    background: linear-gradient(90deg, red 1.4%, #EDEDED 0%);
+    background: linear-gradient(90deg, red 5px, #EDEDED 0%);
 }
 
 .medium-urgency {
-    background: linear-gradient(90deg, rgb(253, 182, 1) 1.4%, #EDEDED 0%);
+    background: linear-gradient(90deg, rgb(253, 182, 1) 5px, #EDEDED 0%);
 }
 
 .completed {
