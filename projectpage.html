@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="page-header">
+            <h1>ToDo Application</h1>
+        </div>
+        <div id="side-bar">
+            <!-- THESE SHOULD BE LI/ULs -->
+            <h2 class="menu-option">All Tasks</h2>
+            <h4>+ New Task</h4>
+            <div class="projects-sidebar-list">
+                <h2 class="menu-option">Projects</h2>
+                <h3 class="menu-option menu-item-selected">Annual Report</h3>
+                <h3 class="menu-option">Q4 Presentation</h3>
+                <h3 class="menu-option">Family Vacation</h3>
+                <h4>+ New Project</h4>
+            </div>
+        </div>
+        <div id="main-page">
+            <div class="projects-header">Annual Report</div>
+            <div class="project-card">Descriptions asdf asdfsdf sadf asdfadsf asdf asdfasdfasdf</div>
+            <div class="to-do-card completed">
+                <div class="to-do-main-display">
+                    <div class="main-display-left">
+                        <div class="to-do-status"><img src="./images/checkbox-filled.svg" alt="unfilled checkbox"></div>
+                        <div class="to-do-title">Sample Task</div>
+                    </div>
+                    <div class="main-display-right">
+                        <div class="to-do-expand"><img src="./images/expand.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="to-do-expanded-details">
+                    <div class="to-do-description">These are the details of the to-do</div>
+                    <div class="to-do-due-date">Due Date: 12/2/2007</div>
+                    <div class="to-do-priority">Priority: High</div>
+                    <div class="to-do-project-parent">Project: Coding</div>
+                </div>
+            </div>
+            <div class="to-do-card medium-urgency">
+                <div class="to-do-main-display">
+                    <div class="main-display-left">
+                        <div class="to-do-status"><img src="./images/checkbox-unfilled.svg" alt="unfilled checkbox"></div>
+                        <div class="to-do-title">Sample Task</div>
+                    </div>
+                    <div class="main-display-right">
+                        <div class="to-do-expand"><img src="./images/expand-less.svg" alt="" srcset=""></div>
+                        <div class="to-do-edit-button"><img src="./images/edit.svg" alt="" srcset=""></div>
+                        <div class="to-do-delete-button"><img src="./images/delete.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="to-do-expanded-details expanded">
+                    <div class="to-do-description">These are the details of the to-do. This one is a little shorter though.</div>
+                    <div class="to-do-due-date">Due Date: 3/20/23</div>
+                    <div class="to-do-priority">Priority: Medium</div>
+                    <div class="to-do-project-parent">Project: Family Vacation</div>
+                </div>
+            </div>
+
+ 
+
+        </div>
+    </div>
+
+</body>
+</html>

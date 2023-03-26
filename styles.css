@@ -100,6 +100,16 @@ body {
     border-bottom: 0px;
 }
 
+.menu-item-selected {
+    text-decoration: #E26868 underline;
+    text-decoration-thickness: 3px;
+}
+
+.menu-option:hover {
+    text-decoration: #E26868 underline;
+    text-decoration-thickness: 3px;
+}
+
 img{
     margin-top: 2px;
     width: 1.7rem;
@@ -111,11 +121,12 @@ img{
     background-color: #D8D9CF;
     padding-left: 1rem;
     padding-right: 1rem;
-
+    padding-top: 1.5rem;
 
 }
 
-.date-display {
+
+.projects-header {
     font-size: 1.4rem;
     margin-top: 1.4rem;
     margin-bottom: .8rem;
@@ -148,6 +159,8 @@ h4 {
     cursor: pointer;
 }
 
+
+
 .to-do-card {
     margin-bottom: .5rem;
     border-style: solid;
@@ -161,6 +174,8 @@ h4 {
     box-shadow: 5px 5px 5px darkgrey;
     border-radius: .4rem;
     background: #EDEDED;
+    box-sizing: border-box;
+
 }
 
 .high-urgency {
@@ -203,3 +218,38 @@ h4 {
 .expanded {
     display: block;
 }
+
+
+/* THIS IS NOW FOR THE OTHER PAGE PROTOTYPES */
+
+
+.project-card {
+    margin-top: .5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 1.2rem;
+    padding-left: 1rem;
+    padding-right: .6rem;
+    width: max(75%, 340px);
+    box-shadow: 5px 5px 5px darkgrey;
+    border-radius: .4rem;
+    background: linear-gradient(90deg, #08acf3 5px, #EDEDED 0%);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    height: 100px;
+    width: 450px;
+  }
